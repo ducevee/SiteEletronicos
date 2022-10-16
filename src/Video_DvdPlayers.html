@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DvdPlayers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="menu">
+        <ul>
+            <li><a href="Video.html">Home</a> </li>
+            <li> <a href="Video_Tvs.html" >Tvs</a> </li>
+            <li><a href="Video_BLU-RAY.html">Blu-Ray</a> </li>
+            <li><a href="Video_DvdPlayers.html">DVD Players</a> </li>
+            <li><a href="Video_Acessórios.html">Acessórios</a> </li>
+            <li><a href="contato.html">Contato</a> </li>
+        </ul>
+    </div>
+</header>
+</br>
+</br>
+</br>
+<h1  style="font-family: 'Champagne & Limousines',serif;  text-align: center; color: #000000"> Escolha um dos DVDs Players para compra!</h1>
+</br>
+</br>
+<div id="Produtos">
+
+</div>
+
+<script>
+    const items = [
+        {
+            id: 0,
+            nome: "Playstation ",
+            img: "https://media.gettyimages.com/photos/sony-playstation-4-pro-gaming-consol-and-controller-seen-during-a-ps4-picture-id1037930454?k=20&m=1037930454&s=612x612&w=0&h=C8uGJmEWkSo17AOVyPj2_wsr6ZvZmNt6N1Lb6Jstg6w=",
+            site: "https://produto.mercadolivre.com.br/MLB-2103885800-ps4-playstation-4-slim-brinde-2-jogos-fisicos-_JM?matt_tool=47921964&matt_word=&matt_source=google&matt_campaign_id=14303413631&matt_ad_group_id=125984290477&matt_match_type=&matt_network=g&matt_device=c&matt_creative=539354956470&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=524409004&matt_product_id=MLB2103885800&matt_product_partition_id=1185036618176&matt_target_id=aud-1439668500133:pla-1185036618176&gclid=CjwKCAjw-8qVBhANEiwAfjXLruvu9tcLUC71mlc71uW2LQU1ai7sLPQyTBYR86SnrXfooLkcAcxsdRoCA80QAvD_BwE",
+            quantidade: 1,
+        },
+        {
+            id: 1,
+            nome: "Xbox ",
+            img: "https://cdn.pocket-lint.com/r/s/970x/assets/images/148296-games-review-xbox-one-s-all-digital-edition-product-shots-image1-xct4hs5njv.jpg",
+            site: "https://www.amazon.com.br/Microsoft-Console-Xbox-Series-S/dp/B08JN2VMGX/ref=asc_df_B08JN2VMGX/?tag=googleshopp00-20&linkCode=df0&hvadid=431496169340&hvpos=&hvnetw=g&hvrand=16103965920577428328&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9102060&hvtargid=pla-971946450873&psc=1",
+            quantidade: 1,
+        },
+        {
+            id: 2,
+            nome: "Aparelho Net ",
+            img: "https://www.reviewbox.com.br/wp-content/uploads/2020/01/2-decodificador-117303138_s.jpg",
+            site: "https://www.amazon.com.br/RECEPTOR-DIGITAL-FULL-REGIONAL-BS9900/dp/B085HGBLYP/ref=asc_df_B085HGBLYP/?tag=googleshopp00-20&linkCode=df0&hvadid=379728502270&hvpos=&hvnetw=g&hvrand=8315607238570063514&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9102060&hvtargid=pla-930394308683&psc=1",
+            quantidade: 1,
+        },
+    ]
+
+    function aparecerLoja(){
+        var conteinerProdutos = document.getElementById("Produtos");
+        items.map((val)=>{
+            conteinerProdutos.innerHTML += '<div class="primeiro-produto">' +
+                '<img src="'+val.img+'" width="500" />' +
+                '<p style="font-size: 30px">'+val.nome+'</p>' +
+                '<a href="'+val.site+'"> Quero Comprar!</a>' +
+                '</div>"';
+
+        });
+    }
+   aparecerLoja();
+
+</script>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+<button id="botao"><a href="Video.html"> Voltar ao início.</a></button>
+</body>
+</html>
